@@ -28,9 +28,8 @@ To get started with the project, follow these steps:
     # Navigate to the project directory
     cd headless-app-query-data-salesforce-graphqlapi
     ```
-
-FEATURE NOT AVAILABLE, COMING SOON, SKIP STEP    
-3. Configure environment variables:
+ 
+3. Configure environment variables:(Coming soon, skip to next step)
     
     * Open the `.env` file.
     * Update the Salesforce credentials and GraphQL endpoint as per your Salesforce environment.
