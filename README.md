@@ -38,32 +38,12 @@ To get started with the project, follow these steps:
     
     ```bash
     npm install
+    ```
+    ```bash
     npm start
     ```
     
-5. Access the application:
-    
-    Once the application is running, you can access it through the specified endpoint to query Salesforce data using GraphQL queries.
-    
-
-## Usage
-
-To use the application, you can:
-
-1. Send GraphQL queries to the specified endpoint.
-2. Analyze and process the data fetched from Salesforce based on your requirements.
-3. Integrate the application with other systems or processes as needed.
-
-## Dependencies
-
-The project uses the following dependencies:
-
-* [Node.js](https://nodejs.org/)
-* [Express.js](https://expressjs.com/)
-* [axios](https://axios-http.com/)
-* dotenv
-
-## In Salesforce it is required to configure:
+5.In Salesforce it is required to configure:
 - Add http://localhost:3000 to your Salesforce CORS
 <img width="519" alt="image" src="https://github.com/tomsouza4/headless-app-query-data-salesforce-graphqlapi/assets/11336182/6d7ad1d9-f7df-4826-ad32-190b5fa85ca8">
 
@@ -88,6 +68,28 @@ curl https://YOUR_SERVER_URL/services/oauth2/token -d 'grant_type=client_credent
 ```js
  const token = "00D8b0000022ug0!AQ8AQNfmDcCNjlqah6UTK90X7WWdRyFfeOXHuEq2hH3fLLTMvRLZ2B9oP5wbjfxzCs.SxtKu0pcCqSWqKVCg4OvisTbkibhU";
 ```
+
+6. Access the application:
+    
+    Once the application is running, go to:
+   ```bash
+   http://localhost:3000
+    ```
+   
+    or any other URL and port combination you've selected
+    
+
+## Usage
+
+To use the application, you can:
+
+1. Send GraphQL queries to the specified endpoint.
+2. Analyze and process the data fetched from Salesforce based on your requirements.
+3. Integrate the application with other systems or processes as needed.
+
+## Sample Output (there is a video below)
+https://github.com/tomsouza4/headless-app-query-data-salesforce-graphqlapi/assets/11336182/ac6deea6-cf38-4c43-8403-2184ede29e8b
+
 
 
 ## Contributing
