@@ -63,6 +63,33 @@ The project uses the following dependencies:
 * [axios](https://axios-http.com/)
 * dotenv
 
+## In Salesforce it is required to configure:
+- Add http://localhost:3000 to your Salesforce CORS
+<img width="519" alt="image" src="https://github.com/tomsouza4/headless-app-query-data-salesforce-graphqlapi/assets/11336182/6d7ad1d9-f7df-4826-ad32-190b5fa85ca8">
+
+- Create a Connected App
+<img width="508" alt="image" src="https://github.com/tomsouza4/headless-app-query-data-salesforce-graphqlapi/assets/11336182/6853aea7-91b5-4b0c-8c49-4405687dc4e5">
+<img width="962" alt="image" src="https://github.com/tomsouza4/headless-app-query-data-salesforce-graphqlapi/assets/11336182/22a470c2-310d-4e98-9ccc-c07d45db2daf">
+
+
+#### Command line to get the the oauth token on Mac:
+```bash
+curl https://YOUR_SERVER_URL/services/oauth2/token -d 'grant_type=client_credentials' -d 'client_id=PASTE_YOUR_CONSUMER_KEY_HERE' -d 'client_secret=PASTE_YOUR_CONSUMER_SECRET_HERE' | jq .access_token | pbcopy
+```
+
+
+#### Copy the token after "access_token" something like:
+```json
+"access_token":"00D8b0000022ug0!AQ8AQGbKIjjkVTHUIcDCYehMqhmqOqc.iKQsKUaDp3zomRfp8kgZjCgJ8TxDlSGOfzwVkjfNGHpCXd_3vtIEkJFPGZSOkOSv"
+```
+
+
+#### Paste the content to index.js file under const token variable
+```js
+ const token = "00D8b0000022ug0!AQ8AQNfmDcCNjlqah6UTK90X7WWdRyFfeOXHuEq2hH3fLLTMvRLZ2B9oP5wbjfxzCs.SxtKu0pcCqSWqKVCg4OvisTbkibhU";
+```
+
+
 ## Contributing
 
 Contributions to the project are welcome. If you have any suggestions, improvements, or bug fixes, feel free to open an issue or create a pull request.
