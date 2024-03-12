@@ -52,10 +52,13 @@ To get started with the project, follow these steps:
 
 
 #### Command line to get the the oauth token on Mac:
+* Optional:
+```bash
+brew install jq
+```
 ```bash
 curl https://YOUR_SERVER_URL/services/oauth2/token -d 'grant_type=client_credentials' -d 'client_id=PASTE_YOUR_CONSUMER_KEY_HERE' -d 'client_secret=PASTE_YOUR_CONSUMER_SECRET_HERE' | jq .access_token | pbcopy
 ```
-
 
 #### Copy the token after "access_token" something like:
 ```json
