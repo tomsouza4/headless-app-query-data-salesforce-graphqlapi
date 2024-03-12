@@ -23,9 +23,8 @@ To get started with the project, follow these steps:
     ```
     
 2. Install the required dependencies:
-    
+    * Navigate to the project directory    
     ```bash
-    # Navigate to the project directory
     cd headless-app-query-data-salesforce-graphqlapi
     ```
  
