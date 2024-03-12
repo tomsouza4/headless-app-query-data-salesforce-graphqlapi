@@ -52,7 +52,7 @@ To get started with the project, follow these steps:
 
 
 #### Command line to get the the oauth token on Mac:
-* Optional:
+* Optional to format your response in a human readable way:
 ```bash
 brew install jq
 ```
